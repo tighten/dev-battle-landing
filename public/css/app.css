@@ -46,7 +46,7 @@ body {
   background: #fff6ec;
 }
 
-.internal--body {
+.internal--body, .internal--footer {
   background: #fff;
 }
 
