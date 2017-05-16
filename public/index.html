@@ -26,29 +26,33 @@
 </head>
 <body>
 <div class="wrapper">
-    <img src="tighten-twitch-dev-battle-logo.png"><br>
+    <h1><img src="tighten-twitch-dev-battle-logo.png" alt="Tighten Co. Dev Battle" class="logo"></h1>
 
-    <h1>Tighten Co. Dev Battle</h1>
-    <h2>Vue vs. React</h2>
-    May 17 7:30pm CDT<br><br>
-    <hr><br><br>
+    <h2>Battle 1: Vue vs. React</h2>
+    <p class="meta">May 17 7:30pm CDT</p>
 
-    <iframe
-        src="http://player.twitch.tv/?channel=tightenco"
-        height="450"
-        width="800"
-        frameborder="0"
-        scrolling="no"
-        allowfullscreen="true">
-    </iframe>
+    <div class="iframes">
+        <div class="responsive-iframe">
+            <iframe
+                src="http://player.twitch.tv/?channel=tightenco"
+                height="450"
+                width="800"
+                frameborder="0"
+                scrolling="no"
+                allowfullscreen="true">
+            </iframe>
+        </div>
 
-    <iframe frameborder="0"
-        scrolling="yes"
-        id="tightenco"
-        src="https://www.twitch.tv/tightenco/chat"
-        height="500a"
-        width="800">
-    </iframe>
+        <div class="responsive-iframe">
+            <iframe frameborder="0"
+                scrolling="yes"
+                id="tightenco"
+                src="https://www.twitch.tv/tightenco/chat"
+                height="450"
+                width="800">
+            </iframe>
+        </div>
+    </div>
 </div>
 </body>
 </html>
