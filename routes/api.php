@@ -8,6 +8,13 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::post('vote', function () {
+    if (request()->cookie('voted')) {
+        return back();
+    }
+
     Vote::for(request('framework'));
-    return back();
+
+    return back()->cookie(
+        'voted', 'true', 20160
+    );
 });
