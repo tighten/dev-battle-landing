@@ -17,10 +17,10 @@ class Vote extends Model
             throw new Exception('Invalid framework');
         }
 
-        self::createForRequest(request(), ['framework' => $framework]);
+        self::forRequest(request(), ['framework' => $framework]);
     }
 
-    public static function createForRequest($request, $parameters)
+    public static function forRequest($request, $parameters)
     {
         VoteLimiter::check($request);
 
