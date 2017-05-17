@@ -88,3 +88,14 @@ h2 {
         margin-top: 10px;
     }
 }
+
+.vote {
+    border: 1px solid #ccc;
+    max-width: 500px; 
+    margin: 1em auto;
+    padding: 1em 1em 2em;
+
+    &__buttons {
+        
+    }
+}

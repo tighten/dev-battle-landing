@@ -15,8 +15,7 @@ class VoteTest extends TestCase
     /** @test */
     function invalid_frameworks_throw_exceptions()
     {
-//        $this->post('/api/vote', ['framework' => 'react']);
-        $response = $this->get('api/vote/schmeact');
+        $response = $this->post('/api/vote', ['framework' => 'react']);
 
         $this->assertTrue($response->getStatusCode() >= 300);
     }
@@ -25,7 +24,7 @@ class VoteTest extends TestCase
     function valid_posts_create_votes()
     {
         $count = Vote::count();
-        $this->get('api/vote/react');
+        $this->post('/api/vote', ['framework' => 'react']);
         $this->assertEquals(Vote::count(), $count + 1);
     }
 
@@ -35,7 +34,7 @@ class VoteTest extends TestCase
         $count = Vote::count();
 
         for ($i = 1; $i <= 15; $i++) {
-            $this->get('api/vote/vue');
+            $this->post('/api/vote', ['framework' => 'vue']);
         }
 
         $this->assertEquals(Vote::count(), $count + 5);

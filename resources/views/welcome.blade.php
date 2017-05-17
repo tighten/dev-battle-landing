@@ -29,12 +29,34 @@
     </div>
 
     <div class="internal internal--body">
-        <div class="vote">
-            <a href="/api/vote/react" class="vote--react">react</a>
-            <a href="/api/vote/vue" class="vote--vue">vue</a>
-        </div>
         <h2>Battle 1: Vue vs. React</h2>
         <p class="meta">May 17 7:30pm CDT</p>
+
+        <div class="vote">
+            <h3>Cast your vote!</h3>
+            <div class="vote__buttons">
+                <a href="#"
+                    onclick="event.preventDefault();
+                             document.getElementById('vote-react-form').submit();">
+                    react 
+                </a>
+                &nbsp;|&nbsp;
+                <a href="#"
+                    onclick="event.preventDefault();
+                             document.getElementById('vote-vue-form').submit();">
+                    vue
+                </a>
+
+                <form id="vote-react-form" action="/api/vote" method="POST" style="display: none;">
+                    {{ csrf_field() }}
+                    <input name="framework" value="react">
+                </form>
+                <form id="vote-vue-form" action="/api/vote" method="POST" style="display: none;">
+                    {{ csrf_field() }}
+                    <input name="framework" value="vue">
+                </form>
+            </div>
+        </div>
 
         <div class="iframes">
             <div class="responsive-iframe">
