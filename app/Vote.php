@@ -11,6 +11,13 @@ class Vote extends Model
 
     private static $frameworks = ['react', 'vue'];
 
+    /* Retrieve */
+    public static function scopeTally($query, $framework)
+    {
+        return $query->whereFramework($framework);
+    }
+
+    /* Add */
     public static function for($framework)
     {
         if (! in_array($framework, self::$frameworks)) {
