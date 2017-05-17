@@ -28,4 +28,16 @@ class VoteTest extends TestCase
         $this->get('api/vote/react');
         $this->assertEquals(Vote::count(), $count + 1);
     }
+
+    /** @test */
+    function repeat_votes_limit_to_five_per_ip()
+    {
+        $count = Vote::count();
+
+        for ($i = 1; $i <= 15; $i++) {
+            $this->get('api/vote/vue');
+        }
+
+        $this->assertEquals(Vote::count(), $count + 5);
+    }
 }

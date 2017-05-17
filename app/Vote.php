@@ -22,6 +22,8 @@ class Vote extends Model
 
     public static function createForRequest($request, $parameters)
     {
+        VoteLimiter::check($request);
+
         return self::create(array_merge([
             'ip_address' => $request->ip(),
         ], $parameters));
