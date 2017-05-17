@@ -31,7 +31,6 @@ class VoteLimiter
 
     private static function cacheKey($request)
     {
-        return 'abc';
         return 'battle-1-vote-limit-' . md5($request->ip());
     }
 }
