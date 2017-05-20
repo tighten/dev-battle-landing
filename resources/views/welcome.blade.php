@@ -30,10 +30,11 @@
 
     <div class="internal internal--body">
         <h2>Battle 1: Vue vs. React</h2>
-        <p class="meta">May 17 7:30pm CDT</p>
+        <p class="meta">May 17 7:30pm CDT (now past)</p>
 
         <div class="vote">
-            <h3>Cast your vote!</h3>
+            <!-- <h3>Cast your vote!</h3> -->
+            <h3>Final vote</h3>
             <div class="vote__buttons">
                 <div>
                     <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="600px" height="600px" viewBox="0 0 600 600" enable-background="new 0 0 600 600" xml:space="preserve"><circle fill="#00D8FF" cx="299.529" cy="299.628" r="50.167"></circle>
@@ -42,8 +43,8 @@
                         <path fill="none" stroke="#00D8FF" stroke-width="24" stroke-miterlimit="10" d="M210.821,351.482 c-33.746-58.292-56.731-117.287-66.312-166.255c-11.544-58.999-3.382-104.109,19.864-117.566 c24.224-14.024,70.055,2.244,118.14,44.94c36.356,32.28,73.688,80.837,105.723,136.173c32.844,56.733,57.461,114.209,67.036,162.582 c12.117,61.213,2.309,107.984-21.453,121.74c-23.057,13.348-65.249-0.784-110.239-39.499 C285.567,460.886,244.898,410.344,210.821,351.482z"></path>
                     </svg>
                     <a href="#"
-                        onclick="event.preventDefault();
-                                 document.getElementById('vote-react-form').submit();">
+                        onclick="event.preventDefault(); return;
+                                 /* document.getElementById('vote-react-form').submit(); */">
                         {{ $tally->react }}
                     </a>
                 </div>
@@ -57,8 +58,8 @@
                     </svg>
 
                     <a href="#"
-                        onclick="event.preventDefault();
-                                 document.getElementById('vote-vue-form').submit();">
+                        onclick="event.preventDefault(); return;
+                                 /* document.getElementById('vote-vue-form').submit(); */">
                         {{ $tally->vue }}
                     </a>
                 </div>
@@ -74,6 +75,10 @@
             </div>
         </div>
 
+        <br><br>
+        <h2>YouTube embed coming soon!</h2>
+
+                <!--
         <div class="iframes">
             <div class="responsive-iframe">
                 <iframe
@@ -94,9 +99,10 @@
                     height="450"
                     width="800">
                 </iframe>
-            </div>
+                </div>
         </div>
     </div>
+                -->
 
     <div class="internal internal--footer">
         Put on by the fine folks at <a href="https://tighten.co/">Tighten Co.</a>

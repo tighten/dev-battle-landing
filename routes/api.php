@@ -8,6 +8,8 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::post('vote', function () {
+    return 'Voting is closed.';
+
     if (request()->cookie('voted')) {
         return back();
     }
