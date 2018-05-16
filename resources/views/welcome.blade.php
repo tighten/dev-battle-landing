@@ -2,7 +2,7 @@
 
 @section('content')
 <h2>Battle 1: React Native vs. NativeScript</h2>
-        <p class="meta">May 25 11am-3pm Eastern</p>
+        <p class="meta">May 25 2018, 11am-3pm Eastern</p>
 
         <br><br>
         <div class="iframes">

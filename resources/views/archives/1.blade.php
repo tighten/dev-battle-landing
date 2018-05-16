@@ -2,7 +2,7 @@
 
 @section('content')
 <h2>Battle 1: Vue vs. React</h2>
-        <p class="meta">May 17 7:30pm CDT (now past)</p>
+        <p class="meta">May 17 2017, 7:30pm CDT (now past)</p>
 
         <div class="vote">
             <!-- <h3>Cast your vote!</h3> -->
