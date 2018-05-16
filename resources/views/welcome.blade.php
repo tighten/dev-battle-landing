@@ -8,7 +8,7 @@
         <div class="iframes">
             <div class="responsive-iframe">
                 <iframe
-                    src="http://player.twitch.tv/?channel=tightenco"
+                    src="https://player.twitch.tv/?channel=tightenco"
                     scrolling="no"
                     allowfullscreen="true">
                 </iframe>
