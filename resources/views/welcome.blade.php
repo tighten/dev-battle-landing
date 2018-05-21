@@ -1,10 +1,10 @@
 @extends('layouts.master')
 
 @section('content')
-<h2>Battle 2: React Native vs. NativeScript</h2>
-<p class="meta">May 25 2018, 11am-3pm Eastern</p>
+<h2 class="text-3xl font-normal text-grey-dark mt-8">Battle 2: React Native vs. NativeScript</h2>
 
-<br><br>
+<p class="text-3xl font-light text-grey-dark mb-8">May 25 2018, 11am-3pm Eastern</p>
+
 <div class="iframes">
     <div class="responsive-iframe">
         <iframe

@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
 
-    <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,600i" rel="stylesheet">
 
     <meta property="og:locale" content="en_US">
     <meta property="og:title" content="Tighten Dev Battle">
@@ -22,17 +22,27 @@
     <meta property="og:image" content="http://battle.tighten.co/tighten-twitch-dev-battle-og.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-</head>
-<body>
-<div class="wrapper">
-    <div class="internal internal--header">
-        <a href="/"><h1><img src="/tighten-twitch-dev-battle-logo.png" alt="Tighten Dev Battle" class="logo"></h1></a>
 
-        <br>
-        <a href="/">Battle 2: React Native vs. NativeScript</a> | <a href="/archives/1">Battle 1: Vue vs. React</a>
+</head>
+<body class="bg-orange-lightest-pale">
+<div class="container max-w-3xl shadow mx-auto">
+    <div class="w-full">
+        <a href="/" class="flex"><img src="/images/tighten-twitch-dev-battle-logo.png" alt="Tighten Dev Battle" class="w-full"></a>
     </div>
 
-    <div class="internal internal--body">
+    <div class="bg-white py-6">
+        <div class="font-light my-6">
+            <a class="text-orange no-underline text-xl"href="/archives/1">
+                <span class="font-semibold">Battle 1:</span> Vue vs. React
+            </a>
+
+            <span class="text-grey-light mx-6">|</span>
+
+            <a class="text-orange no-underline text-xl" href="/">
+                <span class="font-semibold">Battle 2:</span> React Native vs. NativeScript
+            </a>
+        </div>
+
         @yield('content')
     </div>
 
