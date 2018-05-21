@@ -47,13 +47,13 @@ let colors = {
   'transparent': 'transparent',
 
   'black': '#22292f',
-  'grey-darkest': '#3d4852',
-  'grey-darker': '#606f7b',
-  'grey-dark': '#8795a1',
-  'grey': '#b8c2cc',
-  'grey-light': '#dae1e7',
-  'grey-lighter': '#f1f5f8',
-  'grey-lightest': '#f8fafc',
+  'grey-darkest': '#364349',
+  'grey-darker': '#596a73',
+  'grey-dark': '#70818a',
+  'grey': '#9babb4',
+  'grey-light': '#dae4e9',
+  'grey-lighter': '#f3f7f9',
+  'grey-lightest': '#fafcfc',
   'white': '#ffffff',
 
   'red-darkest': '#3b0d0c',
@@ -64,13 +64,14 @@ let colors = {
   'red-lighter': '#f9acaa',
   'red-lightest': '#fcebea',
 
-  'orange-darkest': '#462a16',
-  'orange-darker': '#613b1f',
-  'orange-dark': '#de751f',
-  'orange': '#f6993f',
-  'orange-light': '#faad63',
-  'orange-lighter': '#fcd9b6',
-  'orange-lightest': '#fff5eb',
+  'orange-darkest': '#572501',
+  'orange-darker': '#833d0c',
+  'orange-dark': '#e7731e',
+  'orange': '#fd9735',
+  'orange-light': '#ffac5b',
+  'orange-lighter': '#fdd6b1',
+  'orange-lightest': '#fef3e8',
+  'orange-lightest-pale': '#f5f0ec',
 
   'yellow-darkest': '#453411',
   'yellow-darker': '#684f1d',
@@ -194,6 +195,7 @@ module.exports = {
 
   fonts: {
     'sans': [
+      'Source Sans Pro',
       'system-ui',
       'BlinkMacSystemFont',
       '-apple-system',
