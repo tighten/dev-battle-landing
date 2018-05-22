@@ -2,11 +2,36 @@ body {
     @apply font-sans text-center;
 }
 
-.iframes {
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    margin: 0 auto;
-    padding: 10px;
-    max-width: 800px;
+a {
+    @apply text-orange no-underline;
+
+    :hover {
+        @apply text-orange-dark;
+    }
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.logo {
+    display: block;
+    left: 50%;
+    max-width: 180%;
+    position: relative;
+    transform: translateX(-50%);
+    width: 180%;
+
+    @media only screen and (min-width: 576px) {
+        width: 150%;
+    }
+
+    @media only screen and (min-width: 768px) {
+        left: 0;
+        transform: none;
+        width: 100%;
+    }
 }
 
 .responsive-iframe {
@@ -29,11 +54,6 @@ body {
 }
 
 .vote {
-    border: 1px solid #ccc;
-    margin: 1em auto 2em auto;
-    max-width: 500px;
-    padding: 1em 1em 0;
-
     &__buttons {
         div {
             display: inline-block;
@@ -46,7 +66,8 @@ body {
                 width: 100%;
             }
         }
-        a {
+
+        p {
             background-color: white;
             border-radius: 4px;
             border: 2px solid black;

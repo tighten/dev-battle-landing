@@ -22,32 +22,38 @@
     <meta property="og:image" content="http://battle.tighten.co/tighten-twitch-dev-battle-og.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-
 </head>
+
 <body class="bg-orange-lightest-pale">
 <div class="container max-w-3xl shadow mx-auto">
     <div class="w-full">
-        <a href="/" class="flex"><img src="/images/tighten-twitch-dev-battle-logo.png" alt="Tighten Dev Battle" class="w-full"></a>
+        <a href="/">
+            <img class="logo" src="/images/tighten-twitch-dev-battle-logo.png" alt="Tighten Dev Battle" class="w-full">
+        </a>
     </div>
 
-    <div class="bg-white py-6">
-        <div class="font-light my-6">
-            <a class="text-orange no-underline text-xl"href="/archives/1">
-                <span class="font-semibold">Battle 1:</span> Vue vs. React
+    <div class="bg-white px-4 sm:px-8 py-6">
+        <div class="flex flex-col justify-center leading-normal sm:flex-row text-lg md:text-xl font-light sm:my-6">
+            <a href="/archives/1">
+                <span class="font-semibold">Battle 1:</span> Vue.js vs. React
             </a>
 
-            <span class="text-grey-light mx-6">|</span>
+            <span class="text-grey-light hidden sm:block mx-6">|</span>
 
-            <a class="text-orange no-underline text-xl" href="/">
+            <a href="/">
                 <span class="font-semibold">Battle 2:</span> React Native vs. NativeScript
             </a>
+
+            <div class="border-b mt-6 sm:hidden"></div>
         </div>
 
         @yield('content')
-    </div>
 
-    <div class="internal internal--footer">
-        Put on by the fine folks at <a href="https://tighten.co/">Tighten</a>
+        <div class="border-t pt-8 m-8">
+            <p class="text-base text-grey pt-6">
+                Put on by the fine folks at <a href="https://tighten.co/">Tighten</a>
+            </p>
+        </div>
     </div>
 </div>
 
