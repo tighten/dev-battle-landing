@@ -21,15 +21,17 @@
             </div>
         </div>
 
-        <div class="shadow-md p-3 my-8">
-            <div class="responsive-iframe">
-                <iframe
-                    scrolling="yes"
-                    id="tightenco"
-                    src="https://www.twitch.tv/tightenco/chat">
-                </iframe>
+        @if (\Carbon\Carbon::now()->gt(\Carbon\Carbon::create(2018, 5, 25, 8, 0, 0, 'America/New_York')))
+            <div class="shadow-md p-3 my-8">
+                <div class="responsive-iframe">
+                    <iframe
+                        scrolling="yes"
+                        id="tightenco"
+                        src="https://www.twitch.tv/tightenco/chat">
+                    </iframe>
+                </div>
             </div>
-        </div>
+        @endif
     </div>
 </div>
 @endsection
