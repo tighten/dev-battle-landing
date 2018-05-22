@@ -5,7 +5,7 @@ body {
 a {
     @apply text-orange no-underline;
 
-    :hover {
+    &:hover {
         @apply text-orange-dark;
     }
 }
