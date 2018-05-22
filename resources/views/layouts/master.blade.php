@@ -12,7 +12,7 @@
 
     <link rel="stylesheet" href="{{ mix('css/app.css') }}">
 
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,600i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i" rel="stylesheet">
 
     <meta property="og:locale" content="en_US">
     <meta property="og:title" content="Tighten Dev Battle">
@@ -33,7 +33,7 @@
     </div>
 
     <div class="bg-white px-4 sm:px-8 py-6">
-        <div class="flex flex-col justify-center leading-normal sm:flex-row text-lg md:text-xl font-light sm:my-6">
+        <div class="flex flex-col justify-center leading-normal sm:flex-row text-base md:text-xl font-light sm:my-6">
             <a href="/archives/1">
                 <span class="font-semibold">Battle 1:</span> Vue.js vs. React
             </a>
