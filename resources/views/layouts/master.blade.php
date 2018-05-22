@@ -10,9 +10,9 @@
 
     <meta name="viewport" content="width=device-width">
 
-    <link rel="stylesheet" href="/css/app.css">
+    <link rel="stylesheet" href="{{ mix('css/app.css') }}">
 
-    <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i" rel="stylesheet">
 
     <meta property="og:locale" content="en_US">
     <meta property="og:title" content="Tighten Dev Battle">
@@ -23,21 +23,37 @@
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
 </head>
-<body>
-<div class="wrapper">
-    <div class="internal internal--header">
-        <a href="/"><h1><img src="/tighten-twitch-dev-battle-logo.png" alt="Tighten Dev Battle" class="logo"></h1></a>
 
-        <br>
-        <a href="/">Battle 2: React Native vs. NativeScript</a> | <a href="/archives/1">Battle 1: Vue vs. React</a>
+<body class="bg-orange-lightest-pale">
+<div class="container max-w-3xl shadow mx-auto">
+    <div class="w-full">
+        <a href="/">
+            <img class="logo" src="/images/tighten-twitch-dev-battle-logo.png" alt="Tighten Dev Battle" class="w-full">
+        </a>
     </div>
 
-    <div class="internal internal--body">
+    <div class="bg-white px-4 sm:px-8 py-6">
+        <div class="flex flex-col justify-center leading-normal sm:flex-row text-base md:text-xl font-light sm:my-6">
+            <a href="/archives/1">
+                <span class="font-semibold">Battle 1:</span> Vue.js vs. React
+            </a>
+
+            <span class="text-grey-light hidden sm:block mx-6">|</span>
+
+            <a href="/">
+                <span class="font-semibold">Battle 2:</span> React Native vs. NativeScript
+            </a>
+
+            <div class="border-b mt-6 sm:hidden"></div>
+        </div>
+
         @yield('content')
-    </div>
 
-    <div class="internal internal--footer">
-        Put on by the fine folks at <a href="https://tighten.co/">Tighten</a>
+        <div class="border-t pt-8 m-8">
+            <p class="text-base text-grey pt-6">
+                Put on by the fine folks at <a href="https://tighten.co/">Tighten</a>
+            </p>
+        </div>
     </div>
 </div>
 

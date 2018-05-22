@@ -1,0 +1,82 @@
+body {
+    @apply font-sans text-center;
+}
+
+a {
+    @apply text-orange no-underline;
+
+    :hover {
+        @apply text-orange-dark;
+    }
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.logo {
+    display: block;
+    left: 50%;
+    max-width: 180%;
+    position: relative;
+    transform: translateX(-50%);
+    width: 180%;
+
+    @media only screen and (min-width: 576px) {
+        width: 150%;
+    }
+
+    @media only screen and (min-width: 768px) {
+        left: 0;
+        transform: none;
+        width: 100%;
+    }
+}
+
+.responsive-iframe {
+    height: 0;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 56.25%;
+
+    & + & {
+        margin-top: 10px;
+    }
+
+    iframe {
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.vote {
+    &__buttons {
+        div {
+            display: inline-block;
+            height: auto;
+            margin: 0 5%;
+            width: 25%;
+
+            svg {
+                height: auto;
+                width: 100%;
+            }
+        }
+
+        p {
+            background-color: white;
+            border-radius: 4px;
+            border: 2px solid black;
+            color: black;
+            display: inline-block;
+            padding: 0.5rem;
+            position: relative;
+            text-decoration: none;
+            top: 18px;
+        }
+    }
+}
