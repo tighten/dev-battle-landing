@@ -19,16 +19,16 @@
     <meta property="og:description" content="{{ $description }}">
     <meta property="og:url" content="{{ config('app.url') }}">
     <meta property="og:site_name" content="Tighten">
-    <meta property="og:image" content="http://battle.tighten.co/tighten-twitch-dev-battle-og.png">
+    <meta property="og:image" content="http://battle.tighten.co/images/tighten-dev-battle-2-logo-og.png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
 </head>
 
 <body class="bg-orange-lightest-pale">
 <div class="container max-w-3xl shadow mx-auto">
-    <div class="w-full">
+    <div class="w-full bg-orange-light pt-4">
         <a href="/">
-            <img class="logo" src="/images/tighten-twitch-dev-battle-logo.png" alt="Tighten Dev Battle" class="w-full">
+            <img class="logo" src="/images/tighten-dev-battle-2-logo.png" alt="Tighten Dev Battle">
         </a>
     </div>
 

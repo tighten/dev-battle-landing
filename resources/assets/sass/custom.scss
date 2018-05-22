@@ -18,19 +18,13 @@ img {
 .logo {
     display: block;
     left: 50%;
-    max-width: 180%;
+    max-width: 960px;
     position: relative;
     transform: translateX(-50%);
-    width: 180%;
+    width: 480px;
 
     @media only screen and (min-width: 576px) {
-        width: 150%;
-    }
-
-    @media only screen and (min-width: 768px) {
-        left: 0;
-        transform: none;
-        width: 100%;
+        width: 84%;
     }
 }
 
