@@ -10,6 +10,10 @@
         May 25, 2018 &middot; 11<span class="text-lg uppercase"> am</span> - 3<span class="text-lg uppercase"> pm</span> Eastern
     </p>
 
+    <p class="text-lg md:text-xl font-normal text-grey-dark pb-6 mb-8">
+        Read more about it on the <a href="https://tighten.co/blog/tighten-dev-battle-2-native">Tighten blog</a>
+    </p>
+
     <div class="max-w-xl mx-auto">
         <div class="shadow-md p-3 my-8">
             <div class="responsive-iframe">
