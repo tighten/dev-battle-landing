@@ -43,7 +43,7 @@
             </div>
         </div>
 
-        @if (\Carbon\Carbon::now()->gt(\Carbon\Carbon::create(2018, 5, 25, 8, 0, 0, 'America/New_York')))
+        @if (\Carbon\Carbon::now()->lt(\Carbon\Carbon::create(2018, 5, 25, 4, 0, 0, 'America/New_York')))
             <div class="shadow-md p-3 my-8">
                 <div class="responsive-iframe">
                     <iframe
