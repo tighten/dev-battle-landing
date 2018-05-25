@@ -14,6 +14,24 @@
         Read more about it on the <a href="https://tighten.co/blog/tighten-dev-battle-2-native">Tighten blog</a>
     </p>
 
+    <div class="border-t border-b pt-8">
+        <p class="text-sm uppercase tracking-wide text-grey mb-6">
+            Repositories
+        </p>
+
+        <p class="text-lg md:text-xl font-normal text-grey-dark my-4">
+            Pickr <a href="https://github.com/tightenco/pickr-api">API</a> and <a href="https://github.com/tightenco/pickr-api/tree/master/mockups">app mockups</a>
+        </p>
+
+        <p class="text-lg md:text-xl font-normal text-grey-dark my-4">
+            <a href="https://github.com/tightenco/pickr-reactnative">React Native code</a>
+        </p>
+
+        <p class="text-lg md:text-xl font-normal text-grey-dark my-4">
+            <a href="https://github.com/tightenco/pickr-nativescript">NativeScript code</a>
+        </p>
+    </div>
+
     <div class="max-w-xl mx-auto">
         <div class="shadow-md p-3 my-8">
             <div class="responsive-iframe">
