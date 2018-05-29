@@ -3,17 +3,17 @@
 use App\Vote;
 
 Route::get('/', function () {
-    return view('welcome');
+    return redirect('2');
 });
 
-Route::group(['prefix' => 'archives'], function () {
-    Route::get('1', function () {
-        return view('archives.1')
-            ->with('tally', (object) [
-                'react' => Vote::tally('react')->count(),
-                'vue' => Vote::tally('vue')->count()
-            ]);
-    });
+Route::get('2', function () {
+    return view('2');
 });
 
-Auth::routes();
+Route::get('1', function () {
+    return view('1')
+        ->with('tally', (object) [
+            'react' => Vote::tally('react')->count(),
+            'vue' => Vote::tally('vue')->count()
+        ]);
+});
