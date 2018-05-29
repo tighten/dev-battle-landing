@@ -34,13 +34,13 @@
 
     <div class="bg-white px-4 sm:px-8 py-6">
         <div class="flex flex-col justify-center leading-normal sm:flex-row text-base md:text-xl font-light sm:my-6">
-            <a href="/1">
+            <a href="{{ route('battle.1') }}">
                 <span class="font-semibold">Battle 1:</span> Vue.js vs. React
             </a>
 
             <span class="text-grey-light hidden sm:block mx-6">|</span>
 
-            <a href="/2">
+            <a href="{{ route('battle.2') }}">
                 <span class="font-semibold">Battle 2:</span> React Native vs. NativeScript
             </a>
 
