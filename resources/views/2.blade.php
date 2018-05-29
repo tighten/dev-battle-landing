@@ -40,7 +40,7 @@
         <div class="shadow-md p-3 my-8">
             <div class="responsive-iframe">
                 <iframe
-                    src="https://www.youtube-nocookie.com/embed/6zlrr-Xbeo0?rel=0"
+                    src="https://www.youtube-nocookie.com/embed/6zlrr-Xbeo0?start=265"
                     frameborder="0"
                     allow="autoplay; encrypted-media"
                     allowfullscreen>
