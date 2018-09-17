@@ -2,19 +2,28 @@
 
 @section('content')
 <div class="py-6">
-    <h2 class="text-3xl md:text-4xl font-normal text-grey-dark pb-2">
+    <h2 class="text-3xl md:text-4xl font-normal text-grey-dark pb-8">
         Battle 2: React Native vs. NativeScript
     </h2>
-
-    <p class="text-2xl md:text-3xl font-light text-grey-dark pb-6 mb-8">
-        May 25, 2018 &middot; 11<span class="text-lg uppercase"> am</span> - 3<span class="text-lg uppercase"> pm</span> Eastern (now past)
-    </p>
 
     <p class="text-lg md:text-xl font-normal text-grey-dark pb-6 mb-8">
         Read more about it on the <a href="https://tighten.co/blog/tighten-dev-battle-2-native">Tighten blog</a>
     </p>
 
-    <div class="border-t border-b pt-8">
+    <div class="bg-grey-lighter py-8 mb-8 rounded overflow-hidden shadow-md max-w-xl mx-auto">
+        <h3 class="text-grey-darker pb-4">Round 2 of 3: Authentication and Authorization</h3>
+        <p class="text-2xl md:text-3xl text-orange-dark">
+            September 17, 2018 &middot; 1<span class="text-lg uppercase"> pm</span> - 5<span class="text-lg uppercase"> pm</span> Eastern
+        </p>
+    </div>
+
+    <h3 class="text-grey-darker py-4">Round 1 of 3: Building a CRUD Mobile Application</h3>
+
+    <p class="text-lg md:text-xl font-light text-grey-dark pb-6 mb-8">
+        May 25, 2018 &middot; 11<span class="text-lg uppercase"> am</span> - 3<span class="text-lg uppercase"> pm</span> Eastern (now past)
+    </p>
+
+    <div class="border-t border-b py-8">
         <p class="text-sm uppercase tracking-wide text-grey mb-6">
             Repositories
         </p>
@@ -28,11 +37,11 @@
         </p>
 
         <p class="text-lg md:text-xl font-normal text-grey-dark my-4">
-            &bull; <a href="https://github.com/tightenco/pickr-reactnative">Final React Native code</a>
+            &bull; <a href="https://github.com/tightenco/pickr-reactnative">React Native project</a>
         </p>
 
         <p class="text-lg md:text-xl font-normal text-grey-dark my-4">
-            &bull; <a href="https://github.com/tightenco/pickr-nativescript">Final Vue/NativeScript code</a>
+            &bull; <a href="https://github.com/tightenco/pickr-nativescript">Vue/NativeScript project</a>
         </p>
     </div>
 
