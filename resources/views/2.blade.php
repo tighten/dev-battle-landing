@@ -2,12 +2,12 @@
 
 @section('content')
 <div class="py-6">
-    <h2 class="text-3xl md:text-4xl font-normal text-grey-dark pb-8">
+    <h2 class="text-3xl md:text-4xl font-normal text-grey-dark pb-6">
         Battle 2: React Native vs. NativeScript
     </h2>
 
     <p class="text-lg md:text-xl font-normal text-grey-dark pb-6 mb-8">
-        Read more about it on the <a href="https://tighten.co/blog/tighten-dev-battle-2-native">Tighten blog</a>
+        Find out more on the <a href="https://tighten.co/blog/tighten-dev-battle-2-native">Tighten blog</a>
     </p>
 
     <div class="bg-grey-lighter py-8 mb-8 rounded overflow-hidden shadow-md max-w-xl mx-auto">
@@ -46,6 +46,10 @@
     </div>
 
     <div class="max-w-xl mx-auto">
+        <p class="text-sm uppercase tracking-wide text-grey my-8">
+            Videos
+        </p>
+
         <div class="shadow-md p-3 my-8">
             <div class="responsive-iframe">
                 <iframe
