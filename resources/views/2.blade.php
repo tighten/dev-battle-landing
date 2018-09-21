@@ -13,7 +13,7 @@
     <div class="bg-grey-lighter py-8 mb-8 rounded overflow-hidden shadow-md max-w-xl mx-auto">
         <h3 class="text-grey-darker pb-4">Round 2 of 3: Authentication and Authorization</h3>
         <p class="text-2xl md:text-3xl text-orange-dark">
-            September 21, 2018 &middot; 1<span class="text-lg uppercase"> pm</span> - 5<span class="text-lg uppercase"> pm</span> Eastern
+            Coming Soon
         </p>
     </div>
 
