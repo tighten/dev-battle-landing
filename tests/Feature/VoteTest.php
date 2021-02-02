@@ -14,7 +14,7 @@ class VoteTest extends TestCase
     function invalid_frameworks_throw_exceptions()
     {
         $count = Vote::count();
-        $response = $this->post('/api/vote', ['framework' => 'iojasdoifrreact']);
+        $response = $this->post('/api/vote', ['framework' => 'cfhgaydfreact']);
 
         $this->assertEquals(422, $response->getStatusCode());
         $this->assertEquals(Vote::count(), $count);
