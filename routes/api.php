@@ -1,5 +1,6 @@
 <?php
 
+use App\Exceptions\InvalidFrameworkException;
 use App\Vote;
 use Illuminate\Http\Request;
 
@@ -8,13 +9,19 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 });
 
 Route::post('vote', function () {
-    return 'Voting is closed.';
+    if (app()->environment() !== 'testing') {
+        return 'Voting is closed.';
+    }
 
     if (request()->cookie('voted')) {
         return back();
     }
 
-    Vote::for(request('framework'));
+    try {
+        Vote::for(request('framework'));
+    } catch (InvalidFrameworkException $e) {
+        abort(422, $e->getMessage());
+    }
 
     return back()->cookie(
         'voted', 'true', 20160

@@ -2,8 +2,8 @@
 
 namespace App;
 
+use App\Exceptions\InvalidFrameworkException;
 use Illuminate\Database\Eloquent\Model;
-use Exception;
 
 class Vote extends Model
 {
@@ -21,7 +21,7 @@ class Vote extends Model
     public static function for($framework)
     {
         if (! in_array($framework, self::$frameworks)) {
-            throw new Exception('Invalid framework');
+            throw new InvalidFrameworkException('Invalid framework');
         }
 
         self::forRequest(request(), ['framework' => $framework]);

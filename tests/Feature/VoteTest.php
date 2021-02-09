@@ -4,8 +4,6 @@ namespace Tests\Feature;
 
 use App\Vote;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
-use Illuminate\Foundation\Testing\DatabaseTransactions;
-use Illuminate\Foundation\Testing\WithoutMiddleware;
 use Tests\TestCase;
 
 class VoteTest extends TestCase
@@ -15,9 +13,11 @@ class VoteTest extends TestCase
     /** @test */
     function invalid_frameworks_throw_exceptions()
     {
-        $response = $this->post('/api/vote', ['framework' => 'react']);
+        $count = Vote::count();
+        $response = $this->post('/api/vote', ['framework' => 'cfhgaydfreact']);
 
-        $this->assertTrue($response->getStatusCode() >= 300);
+        $this->assertEquals(422, $response->getStatusCode());
+        $this->assertEquals(Vote::count(), $count);
     }
 
     /** @test */
