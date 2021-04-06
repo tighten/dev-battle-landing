@@ -14,6 +14,6 @@ Route::get('1-react-vs-vue', function () {
     return view('1')
         ->with('tally', (object) [
             'react' => Vote::tally('react')->count(),
-            'vue' => Vote::tally('vue')->count()
+            'vue' => Vote::tally('vue')->count(),
         ]);
 })->name('battle.1');

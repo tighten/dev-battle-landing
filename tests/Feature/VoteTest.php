@@ -11,7 +11,7 @@ class VoteTest extends TestCase
     use DatabaseMigrations;
 
     /** @test */
-    function invalid_frameworks_throw_exceptions()
+    public function invalid_frameworks_throw_exceptions()
     {
         $count = Vote::count();
         $response = $this->post('/api/vote', ['framework' => 'cfhgaydfreact']);
@@ -21,7 +21,7 @@ class VoteTest extends TestCase
     }
 
     /** @test */
-    function valid_posts_create_votes()
+    public function valid_posts_create_votes()
     {
         $count = Vote::count();
         $this->post('/api/vote', ['framework' => 'react']);
@@ -29,7 +29,7 @@ class VoteTest extends TestCase
     }
 
     /** @test */
-    function repeat_votes_limit_to_five_per_ip()
+    public function repeat_votes_limit_to_five_per_ip()
     {
         $count = Vote::count();
 
