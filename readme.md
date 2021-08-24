@@ -9,4 +9,4 @@
 - Install frontend dependencies with `npm install`.
 - Build and watch frontend assets with `npm run dev`.
 - Configure a web server, such as the built-in PHP web server, to serve the site using the `public` directory as the document root: `php -S localhost:8080 -t public`.
-- Run tests with `vendor/bin/phpunit`.
+- Run tests with `vendor/bin/phpunit` (set up dev_battle_landing_test DB to run tests).
