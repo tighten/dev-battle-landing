@@ -2,7 +2,7 @@
     "private": true,
     "scripts": {
         "dev": "npm run development",
-        "development": "NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "development": "NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --config=node_modules/laravel-mix/setup/webpack.config.js",
         "watch": "NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
         "watch-poll": "mix watch -- --watch-options-poll=1000",
         "hot": "NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
@@ -16,8 +16,10 @@
         "laravel-mix": "^6.0.12",
         "laravel-mix-purgecss": "^6.0.0",
         "lodash": "^4.17.21",
+        "postcss": "^8.2.8",
+        "sass": "^1.38.1",
+        "sass-loader": "^12.1.0",
         "tailwindcss": "^0.5.3",
-        "vue": "^2.5.17",
-        "postcss": "^8.2.8"
+        "vue": "^2.5.17"
     }
 }
