@@ -2,6 +2,7 @@
 
 namespace App;
 
+use App\Models\Vote;
 use Carbon\Carbon;
 use Exception;
 
@@ -31,6 +32,6 @@ class VoteLimiter
 
     private static function cacheKey($request)
     {
-        return 'battle-1-vote-limit-'.md5($request->ip());
+        return 'battle-1-vote-limit-' . md5($request->ip());
     }
 }

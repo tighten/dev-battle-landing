@@ -1,6 +1,6 @@
 <?php
 
-use App\Vote;
+use App\Models\Vote;
 
 Route::get('/', function () {
     return redirect()->route('battle.2');

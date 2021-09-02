@@ -2,7 +2,7 @@
 
 namespace Tests\Feature;
 
-use App\Vote;
+use App\Models\Vote;
 use Illuminate\Foundation\Testing\DatabaseMigrations;
 use Tests\TestCase;
 
