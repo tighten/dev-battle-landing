@@ -8,15 +8,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Vote extends Model
 {
-    protected $guarded = [];
-
     private static $frameworks = ['react', 'vue'];
 
-    /* Retrieve */
-    public function scopeTally($query, $framework)
-    {
-        return $query->where('framework', $framework);
-    }
+    protected $guarded = [];
 
     /* Add */
     public static function for($framework)
@@ -35,5 +29,11 @@ class Vote extends Model
         return self::create(array_merge([
             'ip_address' => $request->ip(),
         ], $parameters));
+    }
+
+    /* Retrieve */
+    public function scopeTally($query, $framework)
+    {
+        return $query->where('framework', $framework);
     }
 }

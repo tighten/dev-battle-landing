@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    @php $description = "Four brains. Two screens. One native app."; @endphp
+    @php$description = "Four brains. Two screens. One native app.";@endphp
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Tighten Dev Battle</title>
