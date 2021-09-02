@@ -2,6 +2,7 @@
 
 namespace App;
 
+use App\Models\Vote;
 use Carbon\Carbon;
 use Exception;
 

@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use App\Exceptions\InvalidFrameworkException;
+use App\VoteLimiter;
 use Illuminate\Database\Eloquent\Model;
 
 class Vote extends Model
